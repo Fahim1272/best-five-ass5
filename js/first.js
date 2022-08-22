@@ -20,17 +20,5 @@ buttons('player4','playerFour');
 buttons('player5','playerFive');
 buttons('player6','playerSix');
 
-// document.getElementById('player1').addEventListener('click', function(){
-//     const firstPlayer =document.getElementById('playerOne');
-//     const abcd = firstPlayer.innerText;
-
-//     const clickedButton = document.getElementById('player1');
-//     clickedButton.setAttribute('disabled','');
-    
-//     const playerContainer = document.getElementById('player-container');
-//     const li = document.createElement('li');
-//     li.innerText = abcd;
-//     playerContainer.appendChild(li);
-// })
 
 
