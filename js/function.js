@@ -33,6 +33,6 @@ function playerList() {
  for(const playerName of playerSelectedList ){
   allPlayerName.push(playerName) ;
  }
- const abcde = allPlayerName.length;
- return abcde;
+ const playerAmount = allPlayerName.length;
+ return playerAmount;
 }

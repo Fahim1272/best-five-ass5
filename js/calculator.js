@@ -1,6 +1,6 @@
 
 // First Button
-// Step:1 : added eventHandler in First Button
+// Step:1 : added eventHandler in First Button!
 
 document.getElementById('player-cost-btn').addEventListener('click', function(){
     // step:2 Get the per player cost from input field.
@@ -23,15 +23,16 @@ document.getElementById('player-cost-btn').addEventListener('click', function(){
 });
 
 // Second-Button
-// Step-1: Adding EventHandler in Second Button
+// Step-1: Adding EventHandler in Second Button!
+
 document.getElementById('all-expences-btn').addEventListener('click',function(){
     
-    // step:2 Getting Manger Cost
+    // step:2 Getting Manger Cost!
     const managerCost = document.getElementById('manager-cost');
     const managerStringValue = managerCost.value;
     const managerValue =parseFloat(managerStringValue);
     
-    // step:3 Getting Coach Cost
+    // step:3 Getting Coach Cost!
     const coachCost = document.getElementById('coach-cost');
     const coachStringValue = coachCost.value;
     const coachValue =parseFloat(coachStringValue);
