@@ -12,7 +12,7 @@ function buttons(player, playerName) {
     li.innerText = abcd;
     const playerCount = playerList();
     if (playerCount >= 5) {
-      alert('erorr')
+      alert('You can select only 5 Players')
       return;
     } 
     playerContainer.appendChild(li);

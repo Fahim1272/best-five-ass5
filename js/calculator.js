@@ -6,12 +6,13 @@ document.getElementById('player-cost-btn').addEventListener('click', function(){
     const playerCost= document.getElementById('player-cost');
     const playervalueString = playerCost.value;
     const playerValue = parseFloat(playervalueString);
-    if (typeof playerValue != number) {
+    if (typeof playerValue !='number'){
         alert('not a number');
     }
     const bgc = playerList()
     
     const total = bgc * playerValue;
+    console.log(total);
     // step:2 Set The total cost in the total player expences segment:
 
     const previousValue = document.getElementById('allplayer-expences');
@@ -36,11 +37,11 @@ document.getElementById('all-expences-btn').addEventListener('click',function(){
     const previousValue = document.getElementById('allplayer-expences');
     const previousValueAmountString = previousValue.innerText;
     const previousValueAmount = parseFloat(previousValueAmountString)
-    
+    // const total = totalExpences+previousValueAmount;
 
     const allExpences = document.getElementById('all-expences');
     const allExpencesString = allExpences.innerText;
-    
+    // const allExpencesAmount = parseFloat(allExpencesString);
     const allTotal = previousValueAmount+totalExpences ;
     allExpences.innerText = allTotal;
 

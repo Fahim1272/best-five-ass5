@@ -10,15 +10,19 @@
 </head>
 
 <body class="bg-dark bg-opacity-75 p-2 text-dark ">
-    <header class="bg-dark bg-opacity-25 text-white text-center" style="height: 25rem">
+    <header class=" text-white text-center" style="height: 25rem">
         <div class="row d-flex">
             <div class="col-3"><img src="img/Shakib-Al-Hasan-4-removebg-preview.png" alt=""></div>
-        <div class="col-9 align-items-center"><h1 class="display-1">Select Best Team</h1></div>
+            <div class="col-9 px-5 pt-5">
+                <h1 class="display-1 mt-5"><strong>Select Best Team</strong></h1>
+                <h4>HurraH! Asip Cup is coming.. Here is the list of the World Class Players! </h4>
+                <h1><span class="text-warning">Choose your best team!</span></h1>
+            </div>
         </div>
-        
-        
+
+
     </header>
-    <section class="container mt-4">
+    <section class="container my-5">
         <div class="row gx-4 ">
             <div class="card col me-4 text-center py-2 bg-dark text-white" style="width: 18rem;">
                 <img src="img/OIP.jpg" class="card-img-top img-fluid" alt="...">
@@ -86,7 +90,7 @@
                     <label for=""><b>Per Player</b></label>
                     <input type="text" name="" id="player-cost" style="width:120px;" class="ms-3">
                 </div>
-                <button id="player-cost-btn" class="mt-2">Calculate</button>
+                <button id="player-cost-btn" class="mt-2 btn btn-primary"><strong>Calculate</strong></button>
                 <h6 class="my-2">Player Expences:<span id="allplayer-expences">00</span></h6>
 
                 <div class="d-flex my-2">
@@ -97,11 +101,14 @@
                     <label for=""><b>Coach</b></label>
                     <input type="text" name="" id="coach-cost" style="width:120px;" class="ms-5">
                 </div>
-                <button id="all-expences-btn">Calculate</button>
+                <button id="all-expences-btn" class="btn btn-primary" ><strong>Calculate</strong></button>
                 <h6 class="my-2">All Expences:<span id="all-expences">00</span></h6>
             </div>
         </div>
     </section>
+    <footer class="mb-5 h-50 text-center">
+        <h5>Copyright@ 2022 All Rigts Reserved!</h5>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/first.js"></script>
