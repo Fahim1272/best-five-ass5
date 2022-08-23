@@ -22,3 +22,6 @@ buttons('player6','playerSix');
 
 
 
+function playerList() {
+ const playerSelectedList = document.getElementsByClassName('player-container');
+}

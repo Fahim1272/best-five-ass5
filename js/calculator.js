@@ -4,16 +4,18 @@
 document.getElementById('player-cost-btn').addEventListener('click', function(){
     // step:1 Get the player cost from input field.
     const playerCost= document.getElementById('player-cost');
-    let playervalue = playerCost.value;
+    const playervalueString = playerCost.value;
+    const playerValue = parseFloat(playervalueString);
     // console.log(playervalue);
 
     // step:2 Set The total cost in the total player expences segment:
 
     const previousValue = document.getElementById('allplayer-expences');
-    // const abcd = previousValue.innerText;
-    // console.log(abcd);
-    previousValue.innerText = playervalue;
-    // console.log(playervalue);
+    const previousValueString = previousValue.innerText;
+    const previousValueAmount = parseFloat(previousValueString);
+    const total = previousValueAmount + playerValue;
+    previousValue.innerText = total;
+    
 });
 
 // Second-Button
@@ -30,7 +32,13 @@ document.getElementById('all-expences-btn').addEventListener('click',function(){
     // Step:4
     const totalExpences = managerValue + coachValue;
 
-    const totalExpencesString = document.getElementById('all-expences');
-    // const dbcs =  totalExpencesString.innerText;
-    totalExpencesString.innerText = totalExpences;
+    const allExpences = document.getElementById('all-expences');
+    const allExpencesString = allExpences.innerText;
+    const allExpencesAmount = parseFloat(allExpencesString);
+    const previousValue = document.getElementById('allplayer-expences');
+    const previousValueAmountString = previousValue.innerText;
+    const previousValueAmount = parseFloat(previousValueAmountString)
+    const total = totalExpences+allExpencesAmount+ previousValueAmount;
+    allExpences.innerText = total;
+
 })
