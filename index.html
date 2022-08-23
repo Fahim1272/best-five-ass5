@@ -11,12 +11,12 @@
 
 <body class=" bg-dark">
     <header class="bg-secondary text-white text-center overflow-hidden " style="height: 25rem">
-        
+
         <h1 class="align-middle">Select Best Team</h1>
     </header>
     <section class="container mt-4">
         <div class="row gx-4 ">
-            <div class="card col me-4 text-center py-2" style="width: 18rem;">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white" style="width: 18rem;">
                 <img src="img/OIP.jpg" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                     <h5 id="playerOne" class="card-title">Sakib Al Hasan</h5>
@@ -25,7 +25,7 @@
                     <button id="player1" class="btn btn-primary">Select</button>
                 </div>
             </div>
-            <div class="card col me-4 text-center py-2">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white">
                 <img src="img/tamim.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="playerTwo" class="card-title playerOne">Tamim Iqbal</h5>
@@ -34,7 +34,7 @@
                     <button id="player2" class="btn btn-primary">Select</button>
                 </div>
             </div>
-            <div class="card col me-4 text-center py-2">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white">
                 <img src="img/ddd.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="playerThree" class="card-title playerOne">Sabbir Rahman</h5>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="row  my-4">
-            <div class="card col me-4 text-center py-2" style="width: 18rem;">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white" style="width: 18rem;">
                 <img src="img/liton.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="playerFour" class="card-title playerOne">Liton Das</h5>
@@ -58,7 +58,7 @@
                     <button id="player4" class="btn btn-primary">Select</button>
                 </div>
             </div>
-            <div class="card col me-4 text-center py-2" style="width: 18rem;">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white" style="width: 18rem;">
                 <img src="img/soumya (1).jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="playerFive" class="card-title playerOne">Soumya Sarkar</h5>
@@ -67,7 +67,7 @@
                     <button id="player5" class="btn btn-primary">Select</button>
                 </div>
             </div>
-            <div class="card col me-4 text-center py-2" style="width: 18rem;">
+            <div class="card col me-4 text-center py-2 bg-secondary text-white" style="width: 18rem;">
                 <img src="img/mominul.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 id="playerSix" class="card-title playerOne">Mominul Houque</h5>
@@ -76,8 +76,24 @@
                     <button id="player6" class="btn btn-primary">Select</button>
                 </div>
             </div>
-            <div class="card col  text-center" style="width: 18rem;">
-                <h5 id="playerFour" class="card-title playerOne">Card title</h5>
+            <div class="card col  text-center container py-5 " style="width: 18rem;">
+                <h3 id="expence-card" class="card-title">Expences</h3>
+                <div class="d-flex">
+                    <label for=""><b>Per Player</b></label>
+                    <input type="text" name="" id=""style="width:120px;" class="ms-3">
+                </div>
+                <h6>Player Expences: <span>00</span></h6>
+                <button>Calculate</button>
+                <div class="d-flex my-2">
+                    <label for=""><b>Manager</b></label>
+                    <input type="text" name="" id=""style="width:120px;"class="ms-4">
+                </div>
+                <div class="d-flex mb-2">
+                    <label for=""><b>Coach</b></label>
+                    <input type="text" name="" id=""style="width:120px;"class="ms-5" >
+                </div>
+                <button>Calculate</button>
+                <p>Total Expences: <span>00</span></p>
             </div>
         </div>
     </section>
