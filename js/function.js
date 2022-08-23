@@ -1,18 +1,18 @@
 
 function buttons(player, playerName) {
   document.getElementById(player).addEventListener('click', function(){
-    const firstPlayer =document.getElementById(playerName);
-    const abcd = firstPlayer.innerText;
+    const selectedPlayer =document.getElementById(playerName);
+    const selectedPlayerName = selectedPlayer.innerText;
 
     const clickedButton = document.getElementById(player);
     clickedButton.setAttribute('disabled','');
     
     const playerContainer = document.getElementById('player-container');
     const li = document.createElement('li');
-    li.innerText = abcd;
+    li.innerText =selectedPlayerName;
     const playerCount = playerList();
     if (playerCount >= 5) {
-      alert('You can select only 5 Players')
+      alert('You can select only 5 Players!')
       return;
     } 
     playerContainer.appendChild(li);
