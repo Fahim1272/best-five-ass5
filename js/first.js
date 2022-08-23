@@ -10,6 +10,11 @@ function buttons(player, playerName) {
     const playerContainer = document.getElementById('player-container');
     const li = document.createElement('li');
     li.innerText = abcd;
+    const playerCount = playerList();
+    if (playerCount >= 5) {
+      alert('erorr')
+      return;
+    } 
     playerContainer.appendChild(li);
 })
 }
@@ -23,5 +28,11 @@ buttons('player6','playerSix');
 
 
 function playerList() {
- const playerSelectedList = document.getElementsByClassName('player-container');
+ const playerSelectedList = document.querySelectorAll('#player-container li');
+ const allPlayerName = [];
+ for(const playerName of playerSelectedList ){
+  allPlayerName.push(playerName) ;
+ }
+ const abcde = allPlayerName.length;
+ return abcde;
 }
